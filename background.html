@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<style type="text/css">
+		.bg1{
+			width: 800px;
+			height: 100px;
+			border: 1px solid blue;
+	/*从底部到顶部 top  第一个颜色red到yellow*/
+			background-image: linear-gradient(to top,rgba(255,0,0,0.5),rgba(255,255,0,0.5),green,cyan,pink,purple);
+		}
+		.bg2{
+			width: 800px;
+			height: 100px;
+			border: 1px solid blue;
+	/*从底部到顶部 top  第一个颜色red到yellow*/
+			background-image: linear-gradient(top,rgba(255,0,0,0.5),rgba(255,255,0,0.5));
+			background-image: -webkit-linear-gradient(top,rgba(255,0,0,0.5),rgba(255,255,0,0.5));
+			
+		}
+		.bg3{
+			width: 200px;
+			height: 200px;
+			border: 10px dotted red;
+			background: url(img/4mainSele5.png) no-repeat;
+			padding: 30px;
+			/*background-clip: border-box; */
+			/*background-clip: padding-box;*/
+			/*background-clip: content-box;*/
+		}
+		.bg4{
+			width: 200px;
+			height: 200px;
+			border: 10px dotted red;
+			background: url(img/9shop_07.jpg) no-repeat left center;
+			padding: 30px;
+			/*background-origin: border-box;*/
+			/*background-origin: padding-box;*/
+			/*background-origin: content-box;*/
+		}
+		.bg5{
+			width: 200px;
+			height: 200px;
+			border: 10px dotted red;
+			background: url(img/9shop_07.jpg) no-repeat left center,url(img/9shop_07.jpg) no-repeat right center;
+			padding: 30px;
+		}
+		.bg6{
+			width: 200px;
+			height: 200px;
+			border: 10px dotted red;
+			background: url(img/4mainSele5.png) no-repeat left center;
+			background-size: 100px 10px;
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3">
+		三个瑞即可几个冬季恋歌关键时刻了，
+		三个瑞即可几个冬季恋歌关键时刻了。
+		三个瑞即可几个冬季恋歌关键时刻了，
+		三个瑞即可几个冬季恋歌关键时刻了。
+	</div>
+	<div class="bg4">
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+	</div>
+	<div class="bg5">
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+	</div>
+	<div class="bg6">
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+		灰舌工人图人事科换个号一开始看，
+	</div>
+</body>
+</html>

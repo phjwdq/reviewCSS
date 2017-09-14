@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态伪元素</title>
+	<style type="text/css">
+		.p1 p{
+			 width: 90px;
+		}
+		/*以下两个不区分先后顺序*/
+		.p1 p:first-letter{
+			color:#ff0000;
+  			font-size:xx-large;
+		}
+		.p1 p:first-line{
+			color:#0000ff;
+  			font-variant:small-caps;
+		}
+	</style>
+</head>
+<body>
+	<div class="p1">
+		<p>合格即可哀嚎肩甲十多个三个地方
+			合格即可哀嚎肩甲十多个三个地方
+			合格即可哀嚎肩甲十多个三个地方
+			合格即可哀嚎肩甲十多个三个地方
+		</p>
+	</div>
+</body>
+</html>

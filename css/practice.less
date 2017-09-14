@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*全局样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+
+.wid{//会在.css文件中显示
+	width: 400px;
+	margin: 0 auto;
+}
+.width(){//不会在.css文件中显示
+	width:500px;
+	margin: 0 auto;
+}
+
+/*定义变量*/
+//注意：普通变量和形参变量不能重名
+@red:red;
+@heightH:50px;
+
+/*带有一个参数*/
+.bg(@color:blue){
+	background:@color;
+}
+.posit(@pos:relative){//带有默认值的形参
+	position:@pos;
+}
+.positP(@posP:absolute,@left,@top){
+	position:@posP;
+	left:@left;
+	top:@top;
+}
+.border(@s:1px,@bw,@c){
+	border-width : @s;
+	border-style : @bw;
+	border-color : @c;
+}
+
+
+/*具体使用*/
+.less1{
+	.width;//直接使用名称就可以
+	.bg(pink);
+	height: 300px;
+	border: 1px solid purple;
+	.posit;//调用带有默认值的，此处写上或者不写实参都可以
+}
+.less1 h1{
+	color:@red;
+	height:@heightH;
+	.bg(yellow);
+}
+.less1 p{
+	.bg(yellow);
+	.positP(absolute,50px,100px);
+	//调用带有默认值的，此处要写上实参，并且参数要一一对应
+}
+
+.less2{
+	.width;
+	.bg(yellow);
+	ul{
+		.wid;
+		.border(1px,solid,red);
+		li{
+			.wid;
+			line-height : 1.5;
+			.bg(pink);
+			a{
+				color : cyan; 
+			} 
+			&:nth-of-type(1){
+			//第一个li
+				.bg(@red);//此处可以在写变量名称
+			}
+			&:nth-child(1){
+				//选不到ul下的第一个还在li元素
+				//因为第一个是P
+				.border(1px,dashed,green);
+			}
+			&:nth-child(2):hover{
+			//&表示当前选择器
+			//第一个li
+				.bg(yellow);
+			}
+		}
+		li:last-child:hover{
+			.bg(blue);
+		}
+		&:nth-child(1){
+		//此时选到了p
+			color:blue;
+		}
+	}
+}
+
+.less3{
+	.bg(yellow);
+}
+.less3 p{
+	.wid;
+	//background:rgba(255,0,0,.3);
+	opacity:0.5;
+}

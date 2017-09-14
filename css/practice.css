@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*全局样式*/
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+.wid {
+  width: 400px;
+  margin: 0 auto;
+}
+/*定义变量*/
+/*带有一个参数*/
+/*具体使用*/
+.less1 {
+  width: 500px;
+  margin: 0 auto;
+  background: #ffc0cb;
+  height: 300px;
+  border: 1px solid purple;
+  position: relative;
+}
+.less1 h1 {
+  color: #ff0000;
+  height: 50px;
+  background: #ffff00;
+}
+.less1 p {
+  background: #ffff00;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+.less2 {
+  width: 500px;
+  margin: 0 auto;
+  background: #ffff00;
+}
+.less2 ul {
+  width: 400px;
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff0000;
+}
+.less2 ul li {
+  width: 400px;
+  margin: 0 auto;
+  line-height: 1.5;
+  background: #ffc0cb;
+}
+.less2 ul li a {
+  color: cyan;
+}
+.less2 ul li:nth-of-type(1) {
+  background: #ff0000;
+}
+.less2 ul li:nth-child(1) {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #008000;
+}
+.less2 ul li:nth-child(2):hover {
+  background: #ffff00;
+}
+.less2 ul li:last-child:hover {
+  background: #0000ff;
+}
+.less2 ul:nth-child(1) {
+  color: blue;
+}
+.less3 {
+  background: #ffff00;
+}
+.less3 p {
+  width: 400px;
+  margin: 0 auto;
+  opacity: 0.5;
+}

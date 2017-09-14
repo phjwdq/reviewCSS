@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文字垂直居中</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 10px auto;
+			border: 1px solid red;
+			display: table;
+		}
+		div p{
+			/*宽度和高度被忽略了*/
+			/*width: 100px;
+			height: 100px;*/
+			background: yellow;
+			/*p作为单独的一个表格单元td,
+			p将忽略宽度和高度，填充整个父元素*/
+			display: table-cell;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<p>黄金价格就关键时刻公祭日看几个,时刻公祭日看几个卡</p>
+	</div>
+	<div class="box2">
+		<p>ghshjfg  fhsgj hjak jfdks jfd, hgke hdfj hfsdk fk hs jfs nk jkds jgdsl</p>
+		
+	</div>
+</body>
+</html>

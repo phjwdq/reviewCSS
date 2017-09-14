@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>垂直居中</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box1{
+			width: 300px;
+			height: 300px;
+			margin: 50px auto;
+			background-color: red;
+			position: relative;
+		}
+		.box1 .box2{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			display: table;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto auto;
+		}
+		.box1 .box2 p{
+			display: table-cell;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<p>gfs
+			jgsk 看过段时间技术的
+			</p>
+		</div>
+	</div>
+</body>
+</html>

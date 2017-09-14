@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<style type="text/css">
+		.tran1,.tran2{
+			width: 300px;
+			height: 300px;
+			margin: 50px auto;
+			background-color: red;
+		}
+		/*translate(上下，左右) 正右负左   正下负上
+		rotate(角度) 以中心点旋转
+		scale(左右，上下) 缩放的大小
+		skew(横向角度，纵向角度) 横向角度 纵向的角度
+		transform-origin左右 上下  百分数 像素值  单词*/
+		.tran1:hover{
+			transform-style: ease-in;
+			transform-origin: 0 50%;
+			transform:  rotate(30deg) translate(15px,-15px) scale(0.5,1) /*skew(10deg,30deg)*/;
+			transtion: all 3s ease;
+			opacity: 0.5;
+		}
+		.tran2{
+			background: pink;
+		}
+		/*property:需要过渡的属性
+		duration:过渡的持续时间
+		timing-function:过渡的动画类型：linear ease ease-in ease-out ease-in-out
+		delay:延时*/
+		.tran2:hover{
+			transition: all 0.5s linear;
+			opacity: 0.3;
+		}
+	</style>
+</head>
+<body>
+	<div class="tran1"></div>
+	<div class="tran2"></div>
+</body>
+</html>

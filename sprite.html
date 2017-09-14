@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sprite</title>
+	<style type="text/css">
+		/*.shen_li {background-image: url(img/CSS Satyr.png); display: block;}
+.pic_7 {background-position: -0px -0px; width: 22px; height: 22px; }
+.pic_6 {background-position: -24px -0px; width: 22px; height: 22px; }
+.pic_4 {background-position: -48px -0px; width: 16px; height: 13px; }
+.pic_5 {background-position: -66px -0px; width: 18px; height: 17px; }
+.pic_3 {background-position: -86px -0px; width: 13px; height: 13px; }
+.pic_1 {background-position: -101px -0px; width: 10px; height: 6px; }
+.pic_2 {background-position: -113px -0px; width: 10px; height: 6px; }*/
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul,li{
+		list-style: none;
+	}
+	.sprite{
+		width: 400px;
+		height: 200px;
+		margin: 50px auto;
+	}
+	.sprite ul{
+		width: 400px;
+		height: 200px;
+	}
+	.sprite ul li{
+		/*line-height: 1.5;*/
+		font-size: 20px;
+	}
+	
+	.sprite ul li:first-child span{
+		display: inline-block;
+		width: 18px; height: 17px;
+		background: url(img/satyr.png) no-repeat -66px 0;
+		/*text-indent: 20px;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="sprite">
+		<ul>
+			<li><span></span>动画好地方&laquo;&raquo;</li>
+			<li>动画好地方&lt;&gt;</li>
+			<li>动画好地方</li>
+
+		</ul>
+	</div>
+</body>
+</html>
